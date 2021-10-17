@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>按钮果冻特效</title>
+</head>
+
+<body>
+    <h3>按钮果冻特效</h3>
+    <button>点我</button>
+    </div>
+
+    <style>
+        button {
+            z-index: 1;
+            color: white;
+            background-color: #40a9ff;
+            outline: none;
+            border: none;
+            padding: 0.5em 1em;
+        }
+
+        button:hover {
+            cursor: pointer;
+            animation: jelly 0.5s;
+        }
+
+        @keyframes jelly {
+
+            0%,
+            100% {
+                transform: scale(1, 1);
+            }
+
+            25%,
+            75% {
+                transform: scale(0.9, 1.1);
+            }
+
+            50% {
+                transform: scale(1.1, 0.9);
+            }
+        }
+    </style>
